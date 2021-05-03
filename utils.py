@@ -15,10 +15,10 @@ def create_user(username, password, ssh_key):
         return False
     
     try:
-        subprocess.call(["mkdir", f"/home/{username}/.ssh"])
+        subprocess.call(["sudo", "mkdir", f"/home/{username}/.ssh"])
     except subprocess.CalledProcessError:
         return False
     
-    subprocess.call(["sudo", "echo", ssh_key, "/home/{username}/.ssh/authorized_keys"])
+    subprocess.call(["sudo", "echo", ssh_key, f"/home/{username}/.ssh/authorized_keys"])
 
     return True
