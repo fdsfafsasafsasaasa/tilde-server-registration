@@ -1,0 +1,36 @@
+body {
+    color: rgb(211, 207, 201);
+    background-color: #181a1b !important;
+    border-color: #736b5e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+.content {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+
+ul,ol {
+    display: inline-block;
+    text-align: left;
+}
+p + ul,ol {
+    margin-top: -10px;
+}
+
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color:#004daa !important
+}
+
+textarea {
+    resize: none;
+}
