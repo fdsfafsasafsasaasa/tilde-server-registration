@@ -15,6 +15,12 @@
                 <br><br>
                 <label for="sshkey"><i class="fas fa-key"></i> <input type="text" placeholder="SSH Key" id="sshkey" name="sshkey" required></label>
                 <br><br>
+                <label for="shell"><i class="fas fa-terminal"></i><select name="shell" id="shell">
+                    {% for shell in shells %}
+                        <option value="{{shell}}">{{shell}}</option>
+                    {% endfor %}
+                </select>
+                <br><br>
                 <button type="submit" >Submit</button>
             </form>
         </div>
